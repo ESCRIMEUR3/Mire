@@ -18,7 +18,7 @@ void setup() {
   pinMode(32, INPUT);
   pinMode(33, INPUT);
 
-  for (int i=0; i<10; 3) {
+  for (int i=0; i<10; i += 3) {
     if (digitalRead(22+i) == LOW && digitalRead(23+i) == LOW && digitalRead(24+i) == LOW){
       mods_actifs[i/3] = 1;
     }
