@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/conect_sins.css')}}">
+</head>
+<body>
+<h1>inscription et connexion</h1>
+<a href="/">Retour à l'accueil</a>
+
+<p>bienvenue sur l'interface de monitoring <em>MIRE</em>. pour consulter les mesures de vos board, entrez vos indentifiants de conexion</p>
+
+<h2>Connexion</h2>
+
+<form action="/dashboard" method="POST"> 
+    <Label for="in_mail">Mail :</Label>
+    <div class="imput-box">
+    <input type="email" placeholder="mail" name="in_mail" id="input_mail" required minlength="4" size="30">
+    </div>
+
+    <label for="mdp">Mot de passe :</label>
+    <div class="imput-box">
+    <input type="password" placeholder="mot de passe" name="mdp" id="input_mdp" required minlength="8" maxlength="8" size="10">
+    </div>
+
+    <input type="submit" value="Se connecter">
+</form>
+
+
+
+<h2>s'inscrire</h2>
+
+E-mail
+<div class="imput-box">
+<input type="email" placeholder="mail" name="mail" id="input_mail" required minlength="4" size="30">
+</div>
+
+Prénon 
+<div class="imput-box">
+<input type="text" placeholder="Prénon" name="nom" id="input_pre" required minlength="4" size="20">
+</div>
+
+Nom
+<div class="imput-box">
+<input type="text" placeholder="Nom" name="nom" id="input_nom" required minlength="4" size="20">
+</div>
+
+Mot de passe
+<div class="imput-box">
+<input type="password" placeholder="mot de passe" name="mdp" id="input_mdp" required minlength="8" maxlength="8" size="10">
+</div>
+
+Confirmer le mot de passe 
+<div class="imput-box">
+<input type="password" placeholder="Confirmation" name="mdp" id="input_mdp" required minlength="8" maxlength="8" size="10">
+</div>
+<input type="submit" value="continuet">
+
+</body>
+</html>
