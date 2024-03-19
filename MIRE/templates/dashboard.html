@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/datstil.css')}}">
+</head>
+<body>
+    
+<h1>Profil</h1>
+<a href="/">Retour à l'accueil</a>
+{{msg}} 
+
+<h2>les Bornes</h2>
+Voici vos boards:
+
+<ul>
+    {% for b in bs%}
+    <li>Board {{b}}</li>
+    {%endfor%}
+</ul>
+
+</body>
+</html>

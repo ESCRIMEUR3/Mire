@@ -1,0 +1,1 @@
+red = (txt, x) => txt.split(" ").slice(0,x).join(" ")
