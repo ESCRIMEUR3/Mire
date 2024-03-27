@@ -1,4 +1,4 @@
-# projet_m-t-o
+# projet_MIRE
 # le projet méteo est un projet visant à fabriquer une météo modulable et pour toute conditions  
 
 # Système d'identification des modules
