@@ -1,0 +1,4 @@
+[
+    {"id_client": 1, "nom":"Wilson"   , "prenom":"Nathans" ,"tel": "06 66 43 39 23"  , "adresse": "366 Av. de Premerlet, 34700 Lodève"},
+    {"id_client": 2, "nom": "Gitarm"  , "prenom":"Leoni" ,"tel":  "07 34 87 56 89" , "adresse": "28 rue du petit pont 34711 Mirvile"}
+]

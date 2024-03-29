@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulair</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/conect_sins.css')}}">
+</head>
+<body>
+<h1>S'inscrire</h1>
+<a href="/">Retour à l'accueil</a>
+<p>{{msg}}</p>
+<div id="card">
+    
+{% if data %}
+<p id="par"><form action="/dashboard" method="POST">
+    <label for="in_nom">Nom :</label>
+    <div class="input-box">
+    <input type="text" placeholder="{{data['nom']}}" name="nom" id="input_nom"  minlength="4" size="20">
+    </div>
+
+    <label for="in_pre">Prénom :</label>
+    <div class="input-box">
+    <input type="text" placeholder="{{data['prenom']}}" name="pré" id="input_pre" minlength="4" size="20">
+    </div>
+
+    <label for="in_adress">Adresse :</label>
+    <div class="input-box">
+    <input type="text" placeholder="{{data['adresse']}}" name="Adress" id="input_adress" minlength="4" size="20">
+    </div>
+
+    <label for="in_tel">Téléphone:</label>
+    <div class="input-box">
+    <input type="tel" placeholder="{{data['tel']}}" name="tel" id="input_tel" minlength="4" size="20">
+    </div>
+{%else%}
+    <label for="in_nom">Nom :</label>
+    <div class="input-box">
+    <input type="text" placeholder="Nom" name="nom" id="input_nom" required minlength="4" size="20">
+    </div>
+
+    <label for="in_pre">Prénom :</label>
+    <div class="input-box">
+    <input type="text" placeholder="Prénom" name="pré" id="input_pre" required minlength="4" size="20">
+    </div>
+
+    <label for="in_adress">Adresse :</label>
+    <div class="input-box">
+    <input type="text" placeholder="Adresse" name="Adress" id="input_adress" required minlength="4" size="20">
+    </div>
+
+    <label for="in_tel">Téléphone:</label>
+    <div class="input-box">
+    <input type="tel" placeholder="Téléphone" name="tel" id="input_tel" required minlength="4" size="20">
+    </div>
+{% endif %}
+    <input type="submit" value="Achat">
+    </p>
+</div>
+    <script src="app.js"></script>
+</form>
+</body>
+</html>

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/datstil.css')}}">
 </head>
 <body>
     
 <h1>Profil</h1>
-<a href="/">Retour à l'accueil</a>
-{{msg}} 
-
-<h2>les Bornes</h2>
-Voici vos boards:
-
+{{msg}}
+<br>
+<br>
+<a href="/coord">Ajouter une board</a>
+<a href="/deconnexion">Déconnexion</a>
+<h2>Voici vos boards :</h2>
 <ul>
     {% for b in bs%}
     <li>Board {{b}}</li>

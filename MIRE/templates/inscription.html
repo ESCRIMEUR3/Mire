@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/conect_sins.css')}}">
+</head>
+<body>
+<h1>s'inscrire</h1>
+<a href="/">Retour à l'accueil</a>
+<p>{{msg}}</p>
+
+<div id="card">
+    <p id="par"><form action="/dashboard" method="POST">
+        
+    <Label for="in_mail">Mail :</Label>
+    <div class="imput-box">
+    <input type="email" placeholder="mail" name="in_mail" id="input_mail" required minlength="4" size="30">
+    </div>
+
+    <label for="mdp">Mot de passe :</label>
+    <div class="imput-box">
+    <input type="password" placeholder="mot de passe" name="mdp" id="input_mdp" required minlength="8" maxlength="8" size="10">
+    </div>
+
+    <label for="mdp">Confirmer le mot de passe :</label>
+    <div class="imput-box">
+    <input type="password" placeholder="Confirmation" name="mdp" id="input_mdp" required minlength="8" maxlength="8" size="10">
+    </div>
+    </p>
+</div>
+    <input type="submit" value="continuer">
+</body>
+</html>

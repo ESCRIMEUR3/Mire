@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 </head>
 <body>
-
-<h1>MPULSE</h1>
-<header><img src="{{url_for('static',filename='images/meteo.jpg')}}" alt="ligne de ciel avec diférente méteo"></header>
-        
-<a href="/login">Connexion</a>
-<a href="/login">s'inscrire</a>
-<h2>information</h2>       
+    <div id="bloc_page">
+        <header>
+            <div id="titre_principal">
+                <h1>MIRE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/connexion">Connexion</a></li>
+                    <li><a href="/coord">Acheter une Board*</a></li>                 
+                </ul>
+            </nav>
+        </header>
+    <div id="banniere_image">
+        <header><img src="{{url_for('static',filename='images/meteo.jpg')}}" alt="ligne de ciel avec diférente méteo"></header>
+    </div>
+<div id="banniere_description">
+<h2>Information</h2>
+<p>*la MIRE board vous permet de monitorer n'importe quelle grandeur physique, où que vous le souhaitiez. Une fois installée, vous pouvez faire rajouter n'importe quel capteur. Sans reprogrammer la board, vous obtiendrez instantanément les mesures dans vore dashboard ! 
+</p>
+<p>MiRE Board by Silva Berger - Charlie Lagorce.</p>
+</div>
 </body>
-
